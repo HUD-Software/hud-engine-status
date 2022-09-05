@@ -1,57 +1,214 @@
 <!DOCTYPE html>
+<html lang="fr">
 
-<h1>OSLayer Status</h1>
-<h2>Windows</h2>
-<table>
-  <tr>
-    <th></th>
-    <th>Generations</th>
-    <th>Compilations</th>
-    <th>Tests</th>
-  </tr>
-  <tr>
-    <th>Visual Studio 2022</th>
-    <td>
-      <img src="Status/OSLayer/Visual Studio 2022-V142-Win32-generation.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-V142-Win64-generation.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-generation.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-generation.svg"/></br>
-    </td>
-    <td>
-      <img src="Status/OSLayer/Visual Studio 2022-V142-Win32-build.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-V142-Win64-build.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-build.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-build.svg"/></br>
-    </td>
-    <td>
-      <img src="Status/OSLayer/Visual Studio 2022-V142-Win32-test.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-V142-Win64-test.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-test.svg"/></br>
-      <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-test.svg"/></br>
-    </td>
-  </tr>
-  <tr>
-    <th>NMake Makefile</th>
-    <td>
-      <img src="Status/OSLayer/NMake Visual Studio 2022-V142-Win32-generation.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-V142-Win64-generation.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-Clang-Win64-generation.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-Clang-Win64-generation.svg"/></br>
-    </td>
-    <td>
-      <img src="Status/OSLayer/NMake Studio 2022-V142-Win32-build.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-V142-Win64-build.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-Clang-Win64-build.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-Clang-Win64-build.svg"/></br>
-    </td>
-    <td>
-      <img src="Status/OSLayer/NMake Studio 2022-V142-Win32-test.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-V142-Win64-test.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-Clang-Win64-test.svg"/></br>
-      <img src="Status/OSLayer/NMake Studio 2022-Clang-Win64-test.svg"/></br>
-    </td>
-  </tr>
-</table>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Exemple HTML et CSS</title>
+</head>
 
+<body>
+  <h1 class="h1">HUD-Engine Status</h1>
+  <h2 class="h2">OSLayer Status</h2>
+  <h3 class="h3">Windows</h3>
+  <h4 class="h4">Generations</h4>
 
-<h2>Linux</h2>
+  <table id="table">
+    <tr>
+      <th></th>
+      <th id="tableth">Clang</th>
+      <th id="tableth">V142</th>
+    </tr>
+    <tr>
+      <th id="tableth">Visual Studio 2022</th>
+      <td>
+        <table>
+          <th>Win32</th>
+          <th>Win64</th>
+          <th>ARM32</th>
+          <th>ARM64</th>
+          <tr>
+            <!-- VS2022 - Clang - Win32 -->
+            <td><img src="Status/OSLayer/Visual Studio 2022-Clang-Win32-generation.svg" /></td>
+            <!-- VS2022 - Clang - Win64 -->
+            <td><img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-generation.svg" /></td>
+            <!-- VS2022 - Clang - ARM32 -->
+            <td><img src="Status/OSLayer/Visual Studio 2022-Clang-ARM32-generation.svg" /></td>
+            <!-- VS2022 - Clang - ARM64 -->
+            <td><img src="Status/OSLayer/Visual Studio 2022-Clang-ARM64-generation.svg" /></td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <th>Win32</th>
+          <th>Win64</th>
+          <th>ARM32</th>
+          <th>ARM64</th>
+          <tr>
+            <!-- VS2022 - V142 - Win32 -->
+            <td><img src="Status/OSLayer/Visual Studio 2022-V142-Win32-generation.svg" /></td>
+            <!-- VS2022 - V142 - Win64 -->
+            <td><img src="Status/OSLayer/Visual Studio 2022-V142-Win64-generation.svg" /></td>
+            <!-- VS2022 - V142 - ARM32 -->
+            <td><img src="Status/OSLayer/Visual Studio 2022-V142-ARM32-generation.svg" /></td>
+            <!-- VS2022 - V142 - ARM64 -->
+            <td><img src="Status/OSLayer/Visual Studio 2022-V142-ARM64-generation.svg" /></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <h4 class="h4">Compilation</h4>
+
+  <table id="table">
+    <tr>
+      <th></th>
+      <th id="tableth">Clang</th>
+      <th id="tableth">V142</th>
+    </tr>
+    <tr>
+      <th id="tableth">Visual Studio 2022</th>
+      <!-- Clang -->
+      <td>
+        <table>
+          <th>Win32</th>
+          <th>Win64</th>
+          <th>ARM32</th>
+          <th>ARM64</th>
+          <tr>
+            <!-- VS2022 - Clang - Win32 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-Win32-Debug-build.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-Win32-Release-build.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - Win64 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-Debug-build.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-Release-build.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - ARM32 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-ARM32-Debug-build.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-ARM32-Release-build.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - ARM64 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-ARM64-Debug-build.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-ARM64-Release-build.svg" /></br>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <!-- V142 -->
+      <td>
+        <table>
+          <th>Win32</th>
+          <th>Win64</th>
+          <th>ARM32</th>
+          <th>ARM64</th>
+          <tr>
+            <!-- VS2022 - Clang - Win32 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-Win32-Debug-build.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-Win32-Release-build.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - Win64 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-Win64-Debug-build.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-Win64-Release-build.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - ARM32 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-ARM32-Debug-build.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-ARM32-Release-build.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - ARM64 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-ARM64-Debug-build.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-ARM64-Release-build.svg" /></br>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <h4 class="h4">Tests</h4>
+
+  <table id="table">
+    <tr>
+      <th></th>
+      <th id="tableth">Clang</th>
+      <th id="tableth">V142</th>
+    </tr>
+    <tr>
+      <th id="tableth">Visual Studio 2022</th>
+      <!-- Clang -->
+      <td>
+        <table>
+          <th>Win32</th>
+          <th>Win64</th>
+          <th>ARM32</th>
+          <th>ARM64</th>
+          <tr>
+            <!-- VS2022 - Clang - Win32 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-Win32-Debug-test.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-Win32-Release-test.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - Win64 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-Debug-test.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-Win64-Release-test.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - ARM32 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-ARM32-Debug-test.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-ARM32-Release-test.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - ARM64 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-ARM64-Debug-test.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-Clang-ARM64-Release-test.svg" /></br>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <!-- V142 -->
+      <td>
+        <table>
+          <th>Win32</th>
+          <th>Win64</th>
+          <th>ARM32</th>
+          <th>ARM64</th>
+          <tr>
+            <!-- VS2022 - Clang - Win32 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-Win32-Debug-test.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-Win32-Release-test.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - Win64 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-Win64-Debug-test.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-Win64-Release-test.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - ARM32 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-ARM32-Debug-test.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-ARM32-Release-test.svg" /></br>
+            </td>
+            <!-- VS2022 - Clang - ARM64 -->
+            <td>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-ARM64-Debug-test.svg" /></br>
+              <img src="Status/OSLayer/Visual Studio 2022-V142-ARM64-Release-test.svg" /></br>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
