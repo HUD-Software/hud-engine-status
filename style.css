@@ -22,8 +22,8 @@
 
 .h3
 {
-    color: grey;
-    font-size: large;
+    color: black;
+    font-size: xx-large;
     cursor: pointer;
     outline: none;
     border: none;
@@ -33,24 +33,41 @@
 
 .h4
 {
-    color: grey;
-    font-size: medium;
+    color: black;
+    font-size: x-large;
     cursor: pointer;
     outline: none;
     border: none;
     text-decoration: underline;
-    text-align: justify;
+    text-align: center;
 }
 
 #table td, #table th {
     border: 1px solid #ddd;
     padding: 8px;
+    text-align: center;
 }
 
 #table tr:nth-child(even){background-color: #f2f2f2;}
 
+
 #tableth {
-    text-align: left;
+    text-align: center;
     background-color: darkgray;
-    color: white;
+    color: black;
 }
+
+.empty_th{
+    border: none ;
+    border: transparent;
+  
+}
+
+.div_step {
+display: flex;
+justify-content: center;
+}
+
+body {
+    background-color: lightslategray;
+  }
