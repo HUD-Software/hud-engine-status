@@ -50,8 +50,6 @@
 #table tr:nth-child(even){background-color: #f2f2f2;}
 
 #tableth {
-    padding-top: 12px;
-    padding-bottom: 12px;
     text-align: left;
     background-color: darkgray;
     color: white;
